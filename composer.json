@@ -2,6 +2,7 @@
     "name": "furiosojack/mr-binary-tree",
     "description": "Arbol binario para ordenamiento o busqueda | Binary tree to sort or search",
     "license": "MIT",
+	"keywords": ["arbol","binario","ordenamiento","sort","binary-tree","tree","binary"],
     "authors": [
         {
             "name": "FuriosoJack",
