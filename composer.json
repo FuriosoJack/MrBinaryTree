@@ -9,7 +9,10 @@
             "email": "furiosojuan0@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+		"php": ">= 5.4",
+	},
+	"homepage": "https://github.com/FuriosoJack/MrBinaryTree",
 	"autoload": {
         "psr-4": {
             "FuriosoJack\\MrBinaryTree\\": ["src"]
