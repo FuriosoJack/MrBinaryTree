@@ -14,8 +14,7 @@
         "psr-4": {
             "FuriosoJack\\MrBinaryTree\\": "src"
         }
-    },
-	"minimum-stability": "dev",
+    },	
     "require": {
 		"php": ">= 5.4"
 	}	
