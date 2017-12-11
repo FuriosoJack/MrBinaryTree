@@ -9,5 +9,10 @@
             "email": "furiosojuan0@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+	"autoload": {
+        "psr-4": {
+            "FuriosoJack\\MrBinaryTree\\": ["src"]
+        }
+    },
 }
