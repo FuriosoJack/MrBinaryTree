@@ -43,17 +43,16 @@ foreach ($ips as $address){
 			$i++;
         }
 		
-$tree->inDesc($tree->getRoot());
+$tree->inAsc($tree->getRoot());
 echo $tree->getLisOrderedList();
-echo $sotIp->orderDesc();
 ```
 
 result 
 ```json
 array:4 [▼
-  0 => "255.168.0.1"
-  1 => "201.0.0.0"
+  0 => "201.0.0.0"
+  1 => "172.0.0.1"
   2 => "172.6.0.1"
-  3 => "172.0.0.1"
+  3 => "255.168.0.1"
 ]
 ```
