@@ -111,7 +111,7 @@ class MrBinaryTree
    {
        if(!is_null($origin)){
            $this->inAsc($origin->getSonLeft());          
-           
+           array_push($this->newList, $origin->getValue());
            $this->inAsc($origin->getSonRight());
        }
    }
