@@ -21,7 +21,7 @@ add to your `composer.json`
 ```json
 {
     "require": {
-        "furiosojack/mr-binary-tree": "^0.1"
+        "furiosojack/mr-binary-tree": "^0.2"
     }
 }
 ```
@@ -44,7 +44,10 @@ foreach ($ips as $address){
         }
 		
 $tree->inAsc($tree->getRoot());
+//Deprecated
 echo $tree->getLisOrderedList();
+
+var_dump($tree->getNodesOrdered());
 ```
 
 result 
