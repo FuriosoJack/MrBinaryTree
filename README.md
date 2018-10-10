@@ -1,5 +1,5 @@
 # MrBinaryTree
-Arbol binario para ordenamiento o busqueda | Binary tree to sort or search
+Arbol binario para ordenamiento o busqueda de cualquier tipo de dato que sea comparable con > y < | Binary tree to sort or search
 
 # License
 
@@ -11,7 +11,7 @@ Arbol binario para ordenamiento o busqueda | Binary tree to sort or search
 ## Installation 
 
 ```bash
-$ php composer require furiosojack/mr-binary-tree=^0.1
+$ composer require furiosojack/mr-binary-tree
 ```
 
 OR 

@@ -133,7 +133,7 @@ class MrBinaryTree
     * Retorna la lista de forma ordenada
     * @return array
     */
-   public function getLisOrderedList(): array
+   public function getLisOrderedList()
    {
        return $this->newList;
    }	
