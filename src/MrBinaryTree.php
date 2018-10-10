@@ -140,7 +140,7 @@ class MrBinaryTree
            $this->inDesc($origin->getSonRight());
            array_push($this->newList, $origin->getValue());
            //Añade el nodo a la lista de nodos
-           array_push($this->nodesList, $origin->getValue());
+           array_push($this->nodesList, $origin);
            $this->inDesc($origin->getSonLeft());
        }
    }
