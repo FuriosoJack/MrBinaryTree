@@ -33,15 +33,27 @@ use FuriosoJack\MrBinaryTree\Node;
  */
 class MrBinaryTree
 {
-   protected $root;   
+   protected $root;
+
+    /**
+     * @deprecated
+     * @var array lista de valores de los nodos
+     */
    protected $newList;
-   
+
+    /**
+     * Lista de nodos ordenados
+     * @var array
+     */
+   protected $nodesList;
+
    /**
     * Ordena un array
     */
    public function __construct()
    {
        $this->newList = array();
+       $this->nodesList = array();
    }
    
    /**
@@ -112,6 +124,8 @@ class MrBinaryTree
        if(!is_null($origin)){
            $this->inAsc($origin->getSonLeft());          
            array_push($this->newList, $origin->getValue());
+           //Añade el nodo a la lista de nodos
+           array_push($this->nodesList, $origin);
            $this->inAsc($origin->getSonRight());
        }
    }
@@ -125,16 +139,29 @@ class MrBinaryTree
        if(!is_null($origin)){
            $this->inDesc($origin->getSonRight());
            array_push($this->newList, $origin->getValue());
-           $this->inDesc($origin->getSonLeft());           
+           //Añade el nodo a la lista de nodos
+           array_push($this->nodesList, $origin->getValue());
+           $this->inDesc($origin->getSonLeft());
        }
    }
    
    /**
     * Retorna la lista de forma ordenada
+    * @deprecated ya no se usara ya que el metodo getNodesOrdered lo sustituira
     * @return array
     */
    public function getLisOrderedList()
    {
        return $this->newList;
-   }	
+   }
+
+    /**
+     * Devuelve la lista de nodos ordenados
+     * @return array
+     */
+   public function getNodesOrdered()
+   {
+       return $this->nodesList;
+   }
+
 }
